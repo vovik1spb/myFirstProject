@@ -291,6 +291,7 @@ h6 {
     padding: 7px 20px;
     -webkit-transition: all 150ms;
     transition: all 150ms;
+    line-height: 1.5;
   }
   .header__link:hover {
     color: #62D0DF;
