@@ -29,9 +29,20 @@
 // бургер
 
 $(function () {
-    $('.menu-icon').click(function (event) {
+    $('.menu-icon, .header__link').click(function (event) {
         $('.menu-icon,.header__menu').toggleClass('active');
         $('body').toggleClass('lock');
+    });
+});
+
+// плавный скролл к якорям
+
+$(document).ready(function(){
+    $("#anchor").on("click","a", function (event) {
+        event.preventDefault();
+        let id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
     });
 });
 

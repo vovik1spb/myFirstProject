@@ -146,6 +146,7 @@ h6 {
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 50;
+		cursor: pointer;
 
 		@media (max-width: 420px) {
 			left: 85%;
@@ -232,8 +233,9 @@ h6 {
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
-		padding: 100px;
+		padding: 100px 50px;
 		color: #fff;
+		overflow: visible;
 	}
 
 	.header__list li {
@@ -242,8 +244,8 @@ h6 {
 
 	.header__link {
 		font-size: 24px;
-		padding: 20px;
-		transition: all 250ms;
+		padding: 7px 20px;
+		transition: all 150ms;
 
 		&:hover {
 			color: #62D0DF;
@@ -444,16 +446,12 @@ body {
 .block1 {
 	position: relative;
 	z-index: 9;
-	padding: 20px 0px;
+	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: start;
 	justify-content: center;
 	height: 700px;
-
-	@media (max-width: 1024px) {
-		padding-left: 0px;
-	}
 
 	@media (max-width: 768px) {
 		height: 600px;
@@ -498,7 +496,7 @@ body {
 		line-height: 1.75;
 		margin-bottom: 63px;
 
-		@media (max-width: 768px) {
+		@media (max-width: 970px) {
 			text-shadow: 1px 0px 2px #F4F9E2;
 		}
 
@@ -909,6 +907,10 @@ body {
 			flex-basis: 50%;
 		}
 
+		@media (max-width: 320px) {
+			flex-basis: 100%;
+		}
+
 		&:hover {
 			box-shadow: 0px 0px 10px 5px rgba(34, 53, 111, 1);
 			transform: rotateY(20deg) scale(1.1);
@@ -1026,6 +1028,10 @@ body {
 
 		@media (max-width: 420px) {
 			padding: 5px;
+		}
+
+		@media (max-width: 320px) {
+			flex-basis: 100%;
 		}
 	}
 
@@ -1228,11 +1234,7 @@ body {
 			height: 450px;
 		}
 
-		@media (max-width: 480px) {
-			height: 350px;
-		}
-
-		@media (max-width: 420px) {
+		@media (max-width: 500px) {
 			max-width: 100%;
 			height: 450px;
 			justify-content: start;
@@ -1426,7 +1428,7 @@ body {
 	&__title {
 		font-weight: bold;
 		font-style: normal;
-		line-height: 0.64;
+		line-height: 1.1;
 		letter-spacing: -0.006em;
 		color: #22356F;
 		text-transform: uppercase;

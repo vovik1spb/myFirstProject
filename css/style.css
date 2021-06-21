@@ -176,6 +176,7 @@ h6 {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: 50;
+    cursor: pointer;
   }
 }
 
@@ -278,17 +279,18 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding: 100px;
+    padding: 100px 50px;
     color: #fff;
+    overflow: visible;
   }
   .header__list li {
     margin: 0 0 20px 0;
   }
   .header__link {
     font-size: 24px;
-    padding: 20px;
-    -webkit-transition: all 250ms;
-    transition: all 250ms;
+    padding: 7px 20px;
+    -webkit-transition: all 150ms;
+    transition: all 150ms;
   }
   .header__link:hover {
     color: #62D0DF;
@@ -537,7 +539,7 @@ body {
 .block1 {
   position: relative;
   z-index: 9;
-  padding: 20px 0px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,12 +554,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 700px;
-}
-
-@media (max-width: 1024px) {
-  .block1 {
-    padding-left: 0px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -618,7 +614,7 @@ body {
   margin-bottom: 63px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 970px) {
   .block1__text {
     text-shadow: 1px 0px 2px #F4F9E2;
   }
@@ -1140,6 +1136,13 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  .section5__link {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
 .section5__link:hover {
   -webkit-box-shadow: 0px 0px 10px 5px #22356f;
           box-shadow: 0px 0px 10px 5px #22356f;
@@ -1285,6 +1288,13 @@ body {
 @media (max-width: 420px) {
   .section6__block {
     padding: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section6__block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -1539,13 +1549,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  .section8__inner {
-    height: 350px;
-  }
-}
-
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .section8__inner {
     max-width: 100%;
     height: 450px;
@@ -1809,7 +1813,7 @@ body {
 .footer__title {
   font-weight: bold;
   font-style: normal;
-  line-height: 0.64;
+  line-height: 1.1;
   letter-spacing: -0.006em;
   color: #22356F;
   text-transform: uppercase;
