@@ -565,7 +565,7 @@ body {
 			height: 50%;
 		}
 
-		@media (max-width: 480px) {
+		@media (max-width: 530px) {
 			width: 100%;
 			height: 30%;
 		}
@@ -594,8 +594,25 @@ body {
 		justify-content: start;
 	}
 
-	@media (max-width: 500px) {
+	@media (max-width: 530px) {
 		height: 760px;
+	}
+
+	@media (max-width: 501px) {
+		height: 600px;
+	}
+
+	@media (max-width: 420px) {
+		padding: 40px 20px;
+		height: 520px;
+	}
+
+	@media (max-width: 380px) {
+		height: 600px;
+	}
+
+	@media (max-width: 340px) {
+		height: 650px;
 	}
 
 	&__title {
@@ -723,6 +740,7 @@ body {
 			@media (max-width: 420px) {
 				margin-bottom: 26px;
 				font-size: 18px;
+				max-width: 100%;
 			}
 		}
 	}
